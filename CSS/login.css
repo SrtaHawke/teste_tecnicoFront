@@ -1,0 +1,265 @@
+#container_login{
+    position: absolute;
+    display: flex;
+    width: 85%;
+    height: 90%;
+    align-items: center;
+    justify-content: center;
+    font-family: system-ui;
+    font-weight: 550;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content_login{
+    position: relative;
+    display: flex;
+    width: 88%;
+    height: 100%;
+    background-color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content_login label {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 10%;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #343434;
+    top: 4%;
+}
+
+.content_login .div_login{
+    position: relative;
+    display: flex;
+    width: 60%;
+    background-color: #ffffff;
+    height: 75%;
+    border-radius: 5px;
+    border: solid 1px #dadada;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    color: #343434;
+    top: 3%;
+}
+
+.div_login div{
+    position: relative;
+    display: flex;
+    width: 90%;
+    height: 24%;
+    flex-direction: column;
+}
+
+.div_login .label_div_login{
+    height: 15%;
+    top: -4%;
+}
+
+.div_login .label_div_login label{
+    width: 100%;
+    position: relative;
+    display: flex;
+    background-color: white;
+    height: 55%;
+    justify-content: start;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.div_login .label_div_login .label_2_text{
+    height: 45%;
+    font-size: 20px;
+    font-weight: 500;
+    top: 2%;
+}
+
+.div_login .container_email{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: -3%;
+}
+
+.div_login .container_email label{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 70%;
+    justify-content: start;
+    align-items: center;
+}
+
+.div_login .container_email .label_1_login{
+    height: 30%;
+}
+
+.div_login .container_email input{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    border: solid 1px #808080;
+    font-size: 17px;
+    padding-left: 2%;
+    color: #4b4b4b;
+}
+
+.div_login .container_password{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: -3%;
+}
+
+.div_login .container_password label{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 70%;
+    justify-content: start;
+    align-items: center;
+}
+
+.div_login .container_password .label_1_login{
+    height: 30%;
+}
+
+.div_login .container_password input{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    border: solid 1px #808080;
+    font-size: 17px;
+    padding-left: 2%;
+}
+
+.div_login .label_recoverPassword{
+    position: relative;
+    display: flex;
+    width: 90%;
+    height: 5%;
+    justify-content: end;
+    color: #6f6d6d;
+    cursor: pointer;
+    top: -3%;
+}
+
+.div_login .button_Login{
+    display: flex;
+    position: relative;
+    width: 90%;
+    height: 20%;
+    justify-content: center;
+    align-items: center;
+    background-color: #F30168;
+    color: white;
+    border: solid 1px white;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.content_login .label_logo{
+    height: 10%;
+    background-color: transparent;
+    background-image: url(https://www.locaweb.com.br/images/locaweb.svg?v=1.16.34);
+    background-position: center;
+    background-size: 20%;
+    background-repeat: no-repeat;
+    top: -3%;
+}
+
+.link_cadastro {
+    color: #F30168;
+    cursor: pointer;
+    left: 0.5%;
+    position: relative;
+    text-decoration: underline;
+}
+
+.div_aviso{
+    position: absolute;
+    display: flex;
+    background-color: red;
+    z-index: 999999;
+    height: 10%;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.error_message{
+    display: flex;
+    position: absolute;
+    top: 27%;
+    font-size: 17px;
+    color: red;
+}
+
+@media only screen and (max-width: 768px) {
+    #container_login {
+        width: 100%;
+        height: 100%;
+    }
+
+    .content_login {
+        width: 100%;
+        height: 100%;
+    }
+
+    .content_login .label_logo {
+        background-size: 43%;
+        top: -2%;
+    }
+
+    .content_login .div_login{
+        width: 92%;
+        top: 0;
+    }
+
+    .div_login div{
+        height: 22%;
+    }
+
+    .div_login .label_div_login {
+        height: 15%;
+        top: -1%;
+    }
+
+    .div_login .label_div_login label{
+        font-size: 24px;
+    }
+
+    .div_login .label_div_login .label_2_text{
+        top: -5%;
+        align-items: flex-start;
+        font-size: 18px;
+    }
+
+    .div_login .button_Login {
+        height: 16%;
+    }
+
+    .div_login .label_recoverPassword{
+        font-size: 17px;
+    }
+    .content_login .label_cadastro {
+        height: 4%;
+        top: 2%;
+    }
+
+}
